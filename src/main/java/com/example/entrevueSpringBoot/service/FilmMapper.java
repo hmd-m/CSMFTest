@@ -22,7 +22,7 @@ public interface FilmMapper {
 	 public ReponseFilm toReponseFilm(Film entity);
 	 
 	 
-	 @Mapping(target="id", source="dto.id")
+
 	 @Mapping(target="titre", source="dto.titre")
 	 @Mapping(target="description", source="dto.description")
 	 public Film toFilm(RequeteCreationFilm dto);
@@ -32,9 +32,9 @@ public interface FilmMapper {
 	 @Mapping(target="prenom", source="entity.prenom")
 	 public ReponseActeur toReponseActeur(Acteur entity);
 	 
-	 @Mapping(target="id", source="dto.id")
+	
 	 @Mapping(target="nom", source="dto.nom")
 	 @Mapping(target="prenom", source="dto.prenom")
-	 public Acteur ToActeur(RequeteCreationAuteur dto);
+	 public Acteur toActeur(RequeteCreationAuteur dto);
 
 }

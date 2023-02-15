@@ -30,7 +30,7 @@ public interface FilmApi {
      * @return Created (status code 200)
      */
 
-    @RequestMapping(value = "/api/films",
+    @RequestMapping(value = "/films",
         produces = { "application/json" }, 
         consumes = { "application/json" },
         method = RequestMethod.POST)
@@ -44,7 +44,7 @@ public interface FilmApi {
      * @return OK (status code 200)
      */
 
-    @RequestMapping(value = "/api/films/{id}",
+    @RequestMapping(value = "/films/{id}",
         produces = { "application/json" }, 
         method = RequestMethod.GET)
     ResponseEntity<ReponseFilm> obtenirFilm( @PathVariable("id") Integer id);

@@ -8,6 +8,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entrevueSpringBoot.dto.ReponseFilm;
 import com.example.entrevueSpringBoot.dto.RequeteCreationFilm;
@@ -17,6 +19,8 @@ import com.example.entrevueSpringBoot.service.FilmService;
  * @author hamid
  *
  */
+@RestController
+@RequestMapping("/api")
 public class FilmController implements FilmApi {
 	
 	 @Autowired
